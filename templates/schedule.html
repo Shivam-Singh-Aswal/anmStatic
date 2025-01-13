@@ -1,5 +1,6 @@
 <!-- BASE FILE PATH -->
-<base href="file:///run/media/shivam/DataDrive/IIT%20Roorkee/Aalok%20misra/Website/" />
+<!-- <base href="file:///run/media/shivam/DataDrive/IIT%20Roorkee/Aalok%20misra/Website/" /> -->
+<base href="{{site.baseurl}}" />
 <!-- BASE FILE PATH -->
 
 <!DOCTYPE html>
@@ -11,14 +12,14 @@
     <style>
         @font-face {
             font-family: "Lora";
-            src: url("static/fonts/Lora/static/Lora-Regular.ttf");
+            src: url("../static/fonts/Lora/static/Lora-Regular.ttf");
             font-weight: normal;
             font-style: normal;
         }
 
         @font-face {
             font-family: "Krub";
-            src: url("/static/fonts/Krub/Krub-Regular.ttf");
+            src: url("../static/fonts/Krub/Krub-Regular.ttf");
             font-weight: normal;
             font-style: normal;
         }
@@ -161,7 +162,7 @@
             height: 1000%;
             margin: 0px;
             padding: 0px;
-            background-image: url("/static/images/bgFinal.jpg");
+            background-image: url("../static/images/bgFinal.jpg");
             background-size: cover;
             background-position: center;
             filter: blur(1px);
@@ -379,8 +380,8 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="nav-links">
-            <a href="templates/home.html" class="nav-item">Home</a>
-            <a href="templates/about.html" class="nav-item">About</a>
+            <a href="../index.html" class="nav-item">Home</a>
+            <a href="./about.html" class="nav-item">About</a>
 
         </div>
         <!--<div class="logo">Logo</div> -->
@@ -388,13 +389,13 @@
             <div class="dropdown">
                 <div class="dropbtn">Schedule ▾</div>
                 <div class="dropdown-content">
-                    <a href="templates/schedule.html">Day 1</a>
-                    <a href="templates/schedule.html">Day 2</a>
-                    <a href="templates/WittenLecture.html">Ed Witten's Lecture</a>
+                    <a href="./schedule.html">Day 1</a>
+                    <a href="./schedule.html">Day 2</a>
+                    <a href="./WittenLecture.html">Ed Witten's Lecture</a>
                 </div>
             </div>
-            <a href="templates/attendees.html" class="nav-item">Attendees</a>
-            <a href="templates/regForm.html"> <button class="register-btn">Register</button></a>
+            <a href="./attendees.html" class="nav-item">Attendees</a>
+            <a href="./regForm.html"> <button class="register-btn">Register</button></a>
         </div>
     </nav>
 
