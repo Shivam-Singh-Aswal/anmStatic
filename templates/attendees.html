@@ -1,5 +1,6 @@
 <!-- BASE FILE PATH -->
-<base href="file:///run/media/shivam/DataDrive/IIT%20Roorkee/Aalok%20misra/Website/" />
+<!-- <base href="file:///run/media/shivam/DataDrive/IIT%20Roorkee/Aalok%20misra/Website/" /> -->
+<base href="{{site.baseurl}}" />
 <!-- BASE FILE PATH -->
 
 <!DOCTYPE html>
@@ -8,16 +9,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Physics Lecture Series Attendees</title>
-    <link rel="stylesheet" href="static/css/navbar.css">
-    <link rel="stylesheet" href="static/css/attendees.css">
+    <link rel="stylesheet" href="../static/css/navbar.css">
+    <link rel="stylesheet" href="../static/css/attendees.css">
 </head>
 <body>
 
     <!-- Navigation bar -->
     <nav class="navbar">
         <div class="nav-links">
-            <a href="templates/home.html" class="nav-item">Home</a>
-            <a href="templates/about.html" class="nav-item">About</a>
+            <a href="../index.html" class="nav-item">Home</a>
+            <a href="./about.html" class="nav-item">About</a>
 
         </div>
         <!--<div class="logo">Logo</div> -->
@@ -25,13 +26,13 @@
             <div class="dropdown">
                 <div class="dropbtn">Schedule ▾</div>
                 <div class="dropdown-content">
-                    <a href="templates/schedule.html">Day 1</a>
-                    <a href="templates/schedule.html">Day 2</a>
-                    <a href="templates/WittenLecture.html">Ed Witten's Lecture</a>
+                    <a href="./schedule.html">Day 1</a>
+                    <a href="./schedule.html">Day 2</a>
+                    <a href="./WittenLecture.html">Ed Witten's Lecture</a>
                 </div>
             </div>
-            <a href="templates/attendees.html" class="nav-item">Attendees</a>
-            <a href="templates/regForm.html"> <button class="register-btn">Register</button></a>
+            <a href="./attendees.html" class="nav-item">Attendees</a>
+            <a href="./regForm.html"> <button class="register-btn">Register</button></a>
         </div>
     </nav>
 
