@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Successful</title>
+  <link rel="stylesheet" href="{% static 'navbar.css' %}">
+  <link rel="stylesheet" href="{% static 'regSuccess.css' %}">
+</head>
+<body>
+  
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="/" class="nav-item">Home</a>
+            <a href="/about" class="nav-item">About</a>
+
+        </div>
+        <!--<div class="logo">Logo</div> -->
+        <div class="nav-right">
+            <div class="dropdown">
+                <div class="dropbtn">Schedule ▾</div>
+                <div class="dropdown-content">
+                    <a href="/schedule">Day 1</a>
+                    <a href="/schedule">Day 2</a>
+                    <a href="/lecture">Ed Witten's Lecture</a>
+                </div>
+            </div>
+            <a href="/attendees" class="nav-item">Attendees</a>
+            <a href="/register"> <button class="register-btn">Register</button></a>
+        </div>
+    </nav>
+
+    
+    <div class="success-container">
+      <div class="card">
+        <div class="icon">
+          <i class="checkmark">✓</i>
+        </div>
+        <h1>Registration Successful</h1>
+        <p>Thank you for registering! We're excited to have you on board.</p>
+        <a href="/" class="button">Go to Homepage</a>
+      </div>
+    </div>
+</body>
+</html>
