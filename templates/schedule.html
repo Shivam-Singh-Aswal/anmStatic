@@ -296,7 +296,7 @@
         <button class="arrow-btn arrow-btn-right" id="nextBtn" onclick="showSchedule('next')"><center>▾</center></button>
     </main>
 
-    <script>
+    <!-- <script>
         let currentDay = 0;
         const schedules = document.querySelectorAll('.schedule');
 
@@ -311,6 +311,46 @@
             const isHidden = abstractText.style.display === 'none';
             abstractText.style.display = isHidden ? 'block' : 'none';
             button.textContent = isHidden ? 'Hide Abstract' : 'View Abstract';
+        }
+    </script> -->
+    <script>
+        var currentSchedule = 1;
+        var totalSchedules = 6;
+
+        function showSchedule(direction) {
+            document.getElementById('schedule' + currentSchedule).style.display = 'none';
+            
+            if (direction === 'next') {
+                currentSchedule = (currentSchedule % totalSchedules) + 1;
+            } else {
+                currentSchedule = (currentSchedule - 1) || totalSchedules;
+            }
+
+            document.getElementById('schedule' + currentSchedule).style.display = 'block';
+            toggleButtons();
+        }
+
+        function toggleButtons() {
+            document.getElementById('prevBtn').disabled = currentSchedule === 1;
+            document.getElementById('nextBtn').disabled = currentSchedule === totalSchedules;
+        }
+
+        toggleButtons();  // Initialize button state on page load
+
+        // Collapsible Section
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
         }
     </script>
 </body>
