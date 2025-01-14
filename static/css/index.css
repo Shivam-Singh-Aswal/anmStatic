@@ -86,12 +86,12 @@ body {
         font-weight: normal;
     }
 
-    .hero-text .buttons .register {
+    .hero-text .buttons .type1 {
         background-color: #000;
         color: #fff;
     }
 
-    .hero-text .buttons .learn-more {
+    .hero-text .buttons .type2 {
         background-color: #f8f9fa;
         border: 1px solid #ddd;
         color: #333;
