@@ -36,89 +36,265 @@
         </div>
     </nav>
 
-<!--Container for Body-->
-    <div class="parallax">
-        <div class="parallax_layer parallax_layer_bg"></div>
-        <div class="bg-color-layer"></div>
-        <div class="parallax_layer container">
-
-            <div class="header">
-                <div class="title">Schedule of Meetings</div>
-                <div class="day-links">
-                <a href="#" onclick="showDay(0)">Day-1 (Apr 14)</a>
-                <a href="#" onclick="showDay(1)">Day-2 (Apr 15)</a>
-                </div>
+    <!-- Schedule Content -->
+    <main class="schedule-container">
+        <!-- Multiple Schedule Section -->
+        <div id="schedule1" class="schedule-section">
+            <div class="schedule-header">
+                <div class="date">April 14</div>
+                <div class="session">Day 1 Pre-Lunch</div>
+                <div class="time-range">9:00 AM - 12:30 PM</div>
             </div>
 
-            <div class="cards-container-day-1">
-
-                <!-- Schedule for Day 1 -->
-                <div id="day1" class="schedule active">
-                    <div class="session">
-                        <h2 align="center">Morning Session</h2>
-
-                        <div class="card">
-                            <h3>Anthony James Leggett</h3>
-                            <p><strong>Title:</strong> Does the everyday world really obey Quantum Mechanics?</p>
-                            <p><strong>Time:</strong> Jan-9, 7:30 PM (IST)</p>
-                            <div class="links">
-                                <a href="#" class="meeting">Meeting Link</a>
-                                <a href="#" class="youtube">YouTube Link</a>
-                                <a href="#" class="lecture">Lecture File</a>
-                            </div>
-                            <div class="abstract">
-                                <button onclick="toggleAbstract(this)">View Abstract</button>
-                                <p>The abstract content for this talk goes here...</p>
-                            </div>
+            <div class="schedule-grid">
+                <div class="schedule-item">
+                    <div class="speaker"><a href="https://fellows.ias.ac.in/profile/v/FL1988014" style="text-decoration: none; color: hotpink" onmouseover="this.style.color='red';" onmouseout="this.style.color='hotpink';" onclick="this.style.color='lime';">Natarajan Panchapakesan</a></div>
+                    <div class="topic">
+                        <button type="button" class="collapsible">
+                            <div style="margin:0;display:inline;float:left"><p>Opening remarks , Black hole normal modes</p></div> 
+                            <div style="margin:0;display:inline;float:right"><p>▾</p></div>
+                        </button>
+                        <div class="content">
+                            <p><b>Meeting Link: </b><a href="">URL</a></p>
+                            <p><b>Abstract: </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta, odio sit amet placerat ornare, velit ex pulvinar lectus, sit amet convallis orci leo eu risus. Donec tristique dapibus dolor eget viverra. Mauris sed tortor ut dolor fermentum euismod. Duis arcu nisl, consequat in varius sed, hendrerit sit amet erat. Mauris volutpat velit sed nibh elementum hendrerit. Proin massa justo, cursus vel risus quis, convallis vestibulum urna. Maecenas volutpat fermentum tincidunt. Quisque vel egestas elit, quis efficitur nisi. Mauris pharetra neque ac risus lobortis ultrices. Sed tempor ullamcorper nunc, varius imperdiet libero euismod eget. Pellentesque hendrerit, lorem in dignissim vulputate, ligula velit dignissim justo, auctor fermentum eros nisl in enim. Aliquam congue magna suscipit orci molestie ultricies tristique nec ante. Maecenas tincidunt ante non ante porttitor efficitur. Sed quis auctor purus, vel eleifend ipsum.</p>
+                            <p><b>YouTube Link: </b><a href="">URL</a></p>
                         </div>
-
-                        <!-- Add more cards for the morning session -->
                     </div>
-
-                    <div class="session">
-                        <h2 align="center">Afternoon Session</h2>
-                        <div class="card">
-                            <h3>F. Duncan M. Haldane</h3>
-                            <p><strong>Title:</strong> Topological Quantum Matter, Entanglement, and the Second Quantum Revolution</p>
-                            <p><strong>Time:</strong> Jan-16, 7:00 PM (IST)</p>
-                            <div class="links">
-                                <a href="#" class="meeting">Meeting Link</a>
-                                <a href="#" class="youtube">YouTube Link</a>
-                                <a href="#" class="lecture">Lecture File</a>
-                            </div>
-                            <div class="abstract">
-                                <button onclick="toggleAbstract(this)">View Abstract</button>
-                                <p>The abstract content for this talk goes here...</p>
-                            </div>
-                        </div>
-                        <!-- Add more cards for the afternoon session -->
-                    </div>
+                    <div class="time">9:00 - 9:30 AM</div>
                 </div>
 
-                <!-- Schedule for Day 2 -->
-                <div id="day2" class="schedule">
-                    <div class="session">
-                        <h2 align="center">Morning Session</h2>
-                        <div class="card">
-                            <h3>Speaker Name</h3>
-                            <p><strong>Title:</strong> Talk Title</p>
-                            <p><strong>Time:</strong> Time Slot</p>
-                            <div class="links">
-                                <a href="#" class="meeting">Meeting Link</a>
-                                <a href="#" class="youtube">YouTube Link</a>
-                                <a href="#" class="lecture">Lecture File</a>
-                            </div>
-                            <div class="abstract">
-                                <button onclick="toggleAbstract(this)">View Abstract</button>
-                                <p>The abstract content for this talk goes here...</p>
-                            </div>
+                <div class="schedule-item">
+                    <div class="speaker"><a href="https://fellows.ias.ac.in/profile/v/FL1984005" style="text-decoration: none; color: hotpink" onmouseover="this.style.color='red';" onmouseout="this.style.color='hotpink';" onclick="this.style.color='lime';">Harihara Subra Mani</a></div>
+                    <div class="topic">
+                        <button type="button" class="collapsible">
+                            <div style="margin:0;display:inline;float:left"><p>Quantum Thermodynamics of Small Systems: The Anyonic Otto Engine</p></div> 
+                            <div style="margin:0;display:inline;float:right"><p>▾</p></div>
+                        </button>
+                        <div class="content">
+                            <p><b>Meeting Link: </b><a href="">URL</a></p>
+                            <p><b>Abstract: </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta, odio sit amet placerat ornare, velit ex pulvinar lectus, sit amet convallis orci leo eu risus. Donec tristique dapibus dolor eget viverra. Mauris sed tortor ut dolor fermentum euismod. Duis arcu nisl, consequat in varius sed, hendrerit sit amet erat. Mauris volutpat velit sed nibh elementum hendrerit. Proin massa justo, cursus vel risus quis, convallis vestibulum urna. Maecenas volutpat fermentum tincidunt. Quisque vel egestas elit, quis efficitur nisi. Mauris pharetra neque ac risus lobortis ultrices. Sed tempor ullamcorper nunc, varius imperdiet libero euismod eget. Pellentesque hendrerit, lorem in dignissim vulputate, ligula velit dignissim justo, auctor fermentum eros nisl in enim. Aliquam congue magna suscipit orci molestie ultricies tristique nec ante. Maecenas tincidunt ante non ante porttitor efficitur. Sed quis auctor purus, vel eleifend ipsum.</p>
+                            <p><b>YouTube Link: </b><a href="">URL</a></p>
                         </div>
-                        <!-- Add more cards for the morning session -->
                     </div>
+                    <div class="time">9:30 - 10:00 AM</div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="speaker"><a href="https://nasi.org.in/fellows/dass-n-d-hari/" style="text-decoration: none; color: hotpink" onmouseover="this.style.color='red';" onmouseout="this.style.color='hotpink';" onclick="this.style.color='lime';">Nayasinganahalli Desikachar Hari Dass </a></div>
+                    <div class="topic">
+                        <button type="button" class="collapsible">
+                            <div style="margin:0;display:inline;float:left"><p>QCD Strings</p></div> 
+                            <div style="margin:0;display:inline;float:right"><p>▾</p></div>
+                        </button>
+                        <div class="content">
+                            <p><b>Meeting Link: </b><a href="">URL</a></p>
+                            <p><b>Abstract: </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta, odio sit amet placerat ornare, velit ex pulvinar lectus, sit amet convallis orci leo eu risus. Donec tristique dapibus dolor eget viverra. Mauris sed tortor ut dolor fermentum euismod. Duis arcu nisl, consequat in varius sed, hendrerit sit amet erat. Mauris volutpat velit sed nibh elementum hendrerit. Proin massa justo, cursus vel risus quis, convallis vestibulum urna. Maecenas volutpat fermentum tincidunt. Quisque vel egestas elit, quis efficitur nisi. Mauris pharetra neque ac risus lobortis ultrices. Sed tempor ullamcorper nunc, varius imperdiet libero euismod eget. Pellentesque hendrerit, lorem in dignissim vulputate, ligula velit dignissim justo, auctor fermentum eros nisl in enim. Aliquam congue magna suscipit orci molestie ultricies tristique nec ante. Maecenas tincidunt ante non ante porttitor efficitur. Sed quis auctor purus, vel eleifend ipsum.</p>
+                            <p><b>YouTube Link: </b><a href="">URL</a></p>
+                        </div>
+                    </div>
+                    <div class="time">10:00 - 10:30 AM</div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="speaker"><a href="" style="text-decoration: none; color: hotpink" onmouseover="this.style.color='red';" onmouseout="this.style.color='hotpink';" onclick="this.style.color='lime';">Dayanand Parashar</a></div>
+                    <div class="topic">
+                        <button type="button" class="collapsible">
+                            <div style="margin:0;display:inline;float:left"><p>Diquarks</p></div> 
+                            <div style="margin:0;display:inline;float:right"><p>▾</p></div>
+                        </button>
+                        <div class="content">
+                            <p><b>Meeting Link: </b><a href="">URL</a></p>
+                            <p><b>Abstract: </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta, odio sit amet placerat ornare, velit ex pulvinar lectus, sit amet convallis orci leo eu risus. Donec tristique dapibus dolor eget viverra. Mauris sed tortor ut dolor fermentum euismod. Duis arcu nisl, consequat in varius sed, hendrerit sit amet erat. Mauris volutpat velit sed nibh elementum hendrerit. Proin massa justo, cursus vel risus quis, convallis vestibulum urna. Maecenas volutpat fermentum tincidunt. Quisque vel egestas elit, quis efficitur nisi. Mauris pharetra neque ac risus lobortis ultrices. Sed tempor ullamcorper nunc, varius imperdiet libero euismod eget. Pellentesque hendrerit, lorem in dignissim vulputate, ligula velit dignissim justo, auctor fermentum eros nisl in enim. Aliquam congue magna suscipit orci molestie ultricies tristique nec ante. Maecenas tincidunt ante non ante porttitor efficitur. Sed quis auctor purus, vel eleifend ipsum.</p>
+                            <p><b>YouTube Link: </b><a href="">URL</a></p>
+                        </div>
+                    </div>
+                    <div class="time">10:30 - 11:00 AM</div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="speaker"><a href="https://physics.puchd.ac.in/faculty/cv/mmgupta-2014.pdf" style="text-decoration: none; color: hotpink" onmouseover="this.style.color='red';" onmouseout="this.style.color='hotpink';" onclick="this.style.color='lime';">Manmohan Gupta </a></div>
+                    <div class="topic">
+                        <button type="button" class="collapsible">
+                            <div style="margin:0;display:inline;float:left"><p>Quark Dynamics to Flavor Dynamics : a la Mitra</p></div> 
+                            <div style="margin:0;display:inline;float:right"><p>▾</p></div>
+                        </button>
+                        <div class="content">
+                            <p><b>Meeting Link: </b><a href="">URL</a></p>
+                            <p><b>Abstract: </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta, odio sit amet placerat ornare, velit ex pulvinar lectus, sit amet convallis orci leo eu risus. Donec tristique dapibus dolor eget viverra. Mauris sed tortor ut dolor fermentum euismod. Duis arcu nisl, consequat in varius sed, hendrerit sit amet erat. Mauris volutpat velit sed nibh elementum hendrerit. Proin massa justo, cursus vel risus quis, convallis vestibulum urna. Maecenas volutpat fermentum tincidunt. Quisque vel egestas elit, quis efficitur nisi. Mauris pharetra neque ac risus lobortis ultrices. Sed tempor ullamcorper nunc, varius imperdiet libero euismod eget. Pellentesque hendrerit, lorem in dignissim vulputate, ligula velit dignissim justo, auctor fermentum eros nisl in enim. Aliquam congue magna suscipit orci molestie ultricies tristique nec ante. Maecenas tincidunt ante non ante porttitor efficitur. Sed quis auctor purus, vel eleifend ipsum.</p>
+                            <p><b>YouTube Link: </b><a href="">URL</a></p>
+                        </div>
+                    </div>
+                    <div class="time">11:00 - 11:30 AM</div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="speaker"><a href="https://en.wikipedia.org/wiki/T._V._Ramakrishnan" style="text-decoration: none; color: hotpink" onmouseover="this.style.color='red';" onmouseout="this.style.color='hotpink';" onclick="this.style.color='lime';">Tiruppattur Venkatachalamurti Ramakrishnan</a></div>
+                    <div class="topic">
+                        <button type="button" class="collapsible">
+                            <div style="margin:0;display:inline;float:left"><p>The ‘Un'free Electron Limit for Metals</p></div> 
+                            <div style="margin:0;display:inline;float:right"><p>▾</p></div>
+                        </button>
+                        <div class="content">
+                            <p><b>Meeting Link: </b><a href="">URL</a></p>
+                            <p><b>Abstract: </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta, odio sit amet placerat ornare, velit ex pulvinar lectus, sit amet convallis orci leo eu risus. Donec tristique dapibus dolor eget viverra. Mauris sed tortor ut dolor fermentum euismod. Duis arcu nisl, consequat in varius sed, hendrerit sit amet erat. Mauris volutpat velit sed nibh elementum hendrerit. Proin massa justo, cursus vel risus quis, convallis vestibulum urna. Maecenas volutpat fermentum tincidunt. Quisque vel egestas elit, quis efficitur nisi. Mauris pharetra neque ac risus lobortis ultrices. Sed tempor ullamcorper nunc, varius imperdiet libero euismod eget. Pellentesque hendrerit, lorem in dignissim vulputate, ligula velit dignissim justo, auctor fermentum eros nisl in enim. Aliquam congue magna suscipit orci molestie ultricies tristique nec ante. Maecenas tincidunt ante non ante porttitor efficitur. Sed quis auctor purus, vel eleifend ipsum.</p>
+                            <p><b>YouTube Link: </b><a href="">URL</a></p>
+                        </div>
+                    </div>
+                    <div class="time">11:30 AM- 12:00 Noon</div>
                 </div>
             </div>
-    </div>
-    </div>
+        </div>
+
+        <div id="schedule2" class="schedule-section" style="display:none;">
+            <div class="schedule-header">
+                <div class="date">April 14</div>
+                <div class="session">Day 1 Post-Lunch</div>
+                <div class="time-range">2:45 PM - 3:45 PM</div>
+            </div>
+
+            <div class="schedule-grid">
+                <div class="schedule-item">
+                    <div class="speaker"><a href="https://www.du.ac.in/du/uploads/departments/faculty_members/Physics_Astrophysics/2809.pdf" style="text-decoration: none; color: hotpink" onmouseover="this.style.color='red';" onmouseout="this.style.color='hotpink';" onclick="this.style.color='lime';">R. Ramanathan</a></div>
+                    <div class="topic">
+                        <button type="button" class="collapsible">
+                            <div style="margin:0;display:inline;float:left"><p>Fields and Wigner Function</p></div> 
+                            <div style="margin:0;display:inline;float:right"><p>▾</p></div>
+                        </button>
+                        <div class="content">
+                            <p><b>Meeting Link: </b><a href="">URL</a></p>
+                            <p><b>Abstract: </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta, odio sit amet placerat ornare, velit ex pulvinar lectus, sit amet convallis orci leo eu risus. Donec tristique dapibus dolor eget viverra. Mauris sed tortor ut dolor fermentum euismod. Duis arcu nisl, consequat in varius sed, hendrerit sit amet erat. Mauris volutpat velit sed nibh elementum hendrerit. Proin massa justo, cursus vel risus quis, convallis vestibulum urna. Maecenas volutpat fermentum tincidunt. Quisque vel egestas elit, quis efficitur nisi. Mauris pharetra neque ac risus lobortis ultrices. Sed tempor ullamcorper nunc, varius imperdiet libero euismod eget. Pellentesque hendrerit, lorem in dignissim vulputate, ligula velit dignissim justo, auctor fermentum eros nisl in enim. Aliquam congue magna suscipit orci molestie ultricies tristique nec ante. Maecenas tincidunt ante non ante porttitor efficitur. Sed quis auctor purus, vel eleifend ipsum.</p>
+                            <p><b>YouTube Link: </b><a href="">URL</a></p>
+                        </div>
+                    </div>
+                    <div class="time">2:45 – 3:15 PM</div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="speaker"><a href="https://www.linkedin.com/in/prof-satendra-sharma-4a400950/?originalSubdomain=ng" style="text-decoration: none; color: hotpink" onmouseover="this.style.color='red';" onmouseout="this.style.color='hotpink';" onclick="this.style.color='lime';"> Satendra Sharma</a></div>
+                    <div class="topic">
+                        <button type="button" class="collapsible">
+                            <div style="margin:0;display:inline;float:left"><p>Nuclear Structure and IBM</p></div> 
+                            <div style="margin:0;display:inline;float:right"><p>▾</p></div>
+                        </button>
+                        <div class="content">
+                            <p><b>Meeting Link: </b><a href="">URL</a></p>
+                            <p><b>Abstract: </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta, odio sit amet placerat ornare, velit ex pulvinar lectus, sit amet convallis orci leo eu risus. Donec tristique dapibus dolor eget viverra. Mauris sed tortor ut dolor fermentum euismod. Duis arcu nisl, consequat in varius sed, hendrerit sit amet erat. Mauris volutpat velit sed nibh elementum hendrerit. Proin massa justo, cursus vel risus quis, convallis vestibulum urna. Maecenas volutpat fermentum tincidunt. Quisque vel egestas elit, quis efficitur nisi. Mauris pharetra neque ac risus lobortis ultrices. Sed tempor ullamcorper nunc, varius imperdiet libero euismod eget. Pellentesque hendrerit, lorem in dignissim vulputate, ligula velit dignissim justo, auctor fermentum eros nisl in enim. Aliquam congue magna suscipit orci molestie ultricies tristique nec ante. Maecenas tincidunt ante non ante porttitor efficitur. Sed quis auctor purus, vel eleifend ipsum.</p>
+                            <p><b>YouTube Link: </b><a href="">URL</a></p>
+                        </div>
+                    </div>
+                    <div class="time">3:15 – 3:45 PM</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="schedule3" class="schedule-section" style="display:none;">
+            <div class="schedule-header">
+                <div class="date">April 14</div>
+                <div class="session">Day 1 Post Coffee Break</div>
+                <div class="time-range">4:15 PM - 4:45 PM</div>
+            </div>
+
+            <div class="schedule-grid">
+                <div class="schedule-item">
+                    <div class="speaker"><a href="https://en.wikipedia.org/wiki/Muthusamy_Lakshmanan" style="text-decoration: none; color: hotpink" onmouseover="this.style.color='red';" onmouseout="this.style.color='hotpink';" onclick="this.style.color='lime';"> Muthusamy Lakshmanan</a></div>
+                    <div class="topic">
+                        <button type="button" class="collapsible">
+                            <div style="margin:0;display:inline;float:left"><p>Reservoir Computing with Logistic Map</p></div> 
+                            <div style="margin:0;display:inline;float:right"><p>▾</p></div>
+                        </button>
+                        <div class="content">
+                            <p><b>Meeting Link: </b><a href="">URL</a></p>
+                            <p><b>Abstract: </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta, odio sit amet placerat ornare, velit ex pulvinar lectus, sit amet convallis orci leo eu risus. Donec tristique dapibus dolor eget viverra. Mauris sed tortor ut dolor fermentum euismod. Duis arcu nisl, consequat in varius sed, hendrerit sit amet erat. Mauris volutpat velit sed nibh elementum hendrerit. Proin massa justo, cursus vel risus quis, convallis vestibulum urna. Maecenas volutpat fermentum tincidunt. Quisque vel egestas elit, quis efficitur nisi. Mauris pharetra neque ac risus lobortis ultrices. Sed tempor ullamcorper nunc, varius imperdiet libero euismod eget. Pellentesque hendrerit, lorem in dignissim vulputate, ligula velit dignissim justo, auctor fermentum eros nisl in enim. Aliquam congue magna suscipit orci molestie ultricies tristique nec ante. Maecenas tincidunt ante non ante porttitor efficitur. Sed quis auctor purus, vel eleifend ipsum.</p>
+                            <p><b>YouTube Link: </b><a href="">URL</a></p>
+                        </div>
+                    </div>
+                    <div class="time">4:15 – 4:45 PM</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="schedule4" class="schedule-section" style="display:none;">
+            <div class="schedule-header">
+                <div class="date">April 14</div>
+                <div class="session">Day 1 Post Coffee Break</div>
+                <div class="time-range">4:15 PM - 4:45 PM</div>
+            </div>
+
+            <div class="schedule-grid">
+                <div class="schedule-item">
+                    <div class="speaker"><a href="https://www.linkedin.com/in/prof-satendra-sharma-4a400950/?originalSubdomain=ng" style="text-decoration: none; color: hotpink" onmouseover="this.style.color='red';" onmouseout="this.style.color='hotpink';" onclick="this.style.color='lime';"> Satendra Sharma</a></div>
+                    <div class="topic">
+                        <button type="button" class="collapsible">
+                            <div style="margin:0;display:inline;float:left"><p>Nuclear Structure and IBM</p></div> 
+                            <div style="margin:0;display:inline;float:right"><p>▾</p></div>
+                        </button>
+                        <div class="content">
+                            <p><b>Meeting Link: </b><a href="">URL</a></p>
+                            <p><b>Abstract: </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta, odio sit amet placerat ornare, velit ex pulvinar lectus, sit amet convallis orci leo eu risus. Donec tristique dapibus dolor eget viverra. Mauris sed tortor ut dolor fermentum euismod. Duis arcu nisl, consequat in varius sed, hendrerit sit amet erat. Mauris volutpat velit sed nibh elementum hendrerit. Proin massa justo, cursus vel risus quis, convallis vestibulum urna. Maecenas volutpat fermentum tincidunt. Quisque vel egestas elit, quis efficitur nisi. Mauris pharetra neque ac risus lobortis ultrices. Sed tempor ullamcorper nunc, varius imperdiet libero euismod eget. Pellentesque hendrerit, lorem in dignissim vulputate, ligula velit dignissim justo, auctor fermentum eros nisl in enim. Aliquam congue magna suscipit orci molestie ultricies tristique nec ante. Maecenas tincidunt ante non ante porttitor efficitur. Sed quis auctor purus, vel eleifend ipsum.</p>
+                            <p><b>YouTube Link: </b><a href="">URL</a></p>
+                        </div>
+                    </div>
+                    <div class="time">3:15 – 3:45 PM</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="schedule5" class="schedule-section" style="display:none;">
+            <div class="schedule-header">
+                <div class="date">April 14</div>
+                <div class="session">Day 1 Post Coffee Break</div>
+                <div class="time-range">4:15 PM - 4:45 PM</div>
+            </div>
+
+            <div class="schedule-grid">
+                <div class="schedule-item">
+                    <div class="speaker"><a href="https://www.linkedin.com/in/prof-satendra-sharma-4a400950/?originalSubdomain=ng" style="text-decoration: none; color: hotpink" onmouseover="this.style.color='red';" onmouseout="this.style.color='hotpink';" onclick="this.style.color='lime';"> Satendra Sharma</a></div>
+                    <div class="topic">
+                        <button type="button" class="collapsible">
+                            <div style="margin:0;display:inline;float:left"><p>Nuclear Structure and IBM</p></div> 
+                            <div style="margin:0;display:inline;float:right"><p>▾</p></div>
+                        </button>
+                        <div class="content">
+                            <p><b>Meeting Link: </b><a href="">URL</a></p>
+                            <p><b>Abstract: </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta, odio sit amet placerat ornare, velit ex pulvinar lectus, sit amet convallis orci leo eu risus. Donec tristique dapibus dolor eget viverra. Mauris sed tortor ut dolor fermentum euismod. Duis arcu nisl, consequat in varius sed, hendrerit sit amet erat. Mauris volutpat velit sed nibh elementum hendrerit. Proin massa justo, cursus vel risus quis, convallis vestibulum urna. Maecenas volutpat fermentum tincidunt. Quisque vel egestas elit, quis efficitur nisi. Mauris pharetra neque ac risus lobortis ultrices. Sed tempor ullamcorper nunc, varius imperdiet libero euismod eget. Pellentesque hendrerit, lorem in dignissim vulputate, ligula velit dignissim justo, auctor fermentum eros nisl in enim. Aliquam congue magna suscipit orci molestie ultricies tristique nec ante. Maecenas tincidunt ante non ante porttitor efficitur. Sed quis auctor purus, vel eleifend ipsum.</p>
+                            <p><b>YouTube Link: </b><a href="">URL</a></p>
+                        </div>
+                    </div>
+                    <div class="time">3:15 – 3:45 PM</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="schedule6" class="schedule-section" style="display:none;">
+            <div class="schedule-header">
+                <div class="date">April 14</div>
+                <div class="session">Day 1 Post Coffee Break</div>
+                <div class="time-range">4:15 PM - 4:45 PM</div>
+            </div>
+
+            <div class="schedule-grid">
+                <div class="schedule-item">
+                    <div class="speaker"><a href="https://www.linkedin.com/in/prof-satendra-sharma-4a400950/?originalSubdomain=ng" style="text-decoration: none; color: hotpink" onmouseover="this.style.color='red';" onmouseout="this.style.color='hotpink';" onclick="this.style.color='lime';"> Satendra Sharma</a></div>
+                    <div class="topic">
+                        <button type="button" class="collapsible">
+                            <div style="margin:0;display:inline;float:left"><p>Nuclear Structure and IBM</p></div> 
+                            <div style="margin:0;display:inline;float:right"><p>▾</p></div>
+                        </button>
+                        <div class="content">
+                            <p><b>Meeting Link: </b><a href="">URL</a></p>
+                            <p><b>Abstract: </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porta, odio sit amet placerat ornare, velit ex pulvinar lectus, sit amet convallis orci leo eu risus. Donec tristique dapibus dolor eget viverra. Mauris sed tortor ut dolor fermentum euismod. Duis arcu nisl, consequat in varius sed, hendrerit sit amet erat. Mauris volutpat velit sed nibh elementum hendrerit. Proin massa justo, cursus vel risus quis, convallis vestibulum urna. Maecenas volutpat fermentum tincidunt. Quisque vel egestas elit, quis efficitur nisi. Mauris pharetra neque ac risus lobortis ultrices. Sed tempor ullamcorper nunc, varius imperdiet libero euismod eget. Pellentesque hendrerit, lorem in dignissim vulputate, ligula velit dignissim justo, auctor fermentum eros nisl in enim. Aliquam congue magna suscipit orci molestie ultricies tristique nec ante. Maecenas tincidunt ante non ante porttitor efficitur. Sed quis auctor purus, vel eleifend ipsum.</p>
+                            <p><b>YouTube Link: </b><a href="">URL</a></p>
+                        </div>
+                    </div>
+                    <div class="time">3:15 – 3:45 PM</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <button class="arrow-btn arrow-btn-left" id="prevBtn" onclick="showSchedule('prev')" disabled><center>▾</center></button>
+        <button class="arrow-btn arrow-btn-right" id="nextBtn" onclick="showSchedule('next')"><center>▾</center></button>
+    </main>
 
     <script>
         let currentDay = 0;
