@@ -35,6 +35,15 @@ body {
 
 
 /* Hero text */
+    .biggerContainer {
+/*        z-index: 1;*/
+        background-image: url("../images/anmitrahome.png");
+        opacity: 1;
+    /*    background-repeat: no-repeat;*/
+        background-size: cover;
+        display: flex;
+    }
+
     .hero {
         display: flex;
         /*background-color: #554156;*/
