@@ -1,4 +1,42 @@
-<form 
+<!-- BASE FILE PATH -->
+<!-- <base href="file:///run/media/shivam/DataDrive/IIT%20Roorkee/Aalok%20misra/Website/" /> -->
+<base href="{{site.baseurl}}" />
+<!-- BASE FILE PATH -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Lecture Series Registration</title>
+    <link rel="stylesheet" href="../static/css/navbar.css">
+    <link rel="stylesheet" href="../static/css/regForm.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="/" class="nav-item">Home</a>
+            <a href="/about" class="nav-item">About</a>
+
+        </div>
+        <!--<div class="logo">Logo</div> -->
+        <div class="nav-right">
+            <div class="dropdown">
+                <div class="dropbtn">Schedule ▾</div>
+                <div class="dropdown-content">
+                    <a href="./schedule">Day 1</a>
+                    <a href="./schedule">Day 2</a>
+                    <a href="./lecture">Ed Witten's Lecture</a>
+                </div>
+            </div>
+            <a href="./attendees" class="nav-item">Attendees</a>
+            <a href="./register"> <button class="register-btn">Register</button></a>
+        </div>
+    </nav>
+
+    <form 
     id="registrationForm" 
     method="post" 
     action="https://script.google.com/macros/s/AKfycbw5Z1HwkgvZKqJhPE9Wt40DJmTdRwwfZhjxkvCvQ2GGysAfHHwURctSVieWevfguJzdIA/exec">
