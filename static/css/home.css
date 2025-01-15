@@ -1,5 +1,5 @@
 body {
-    margin: 0px;
+    margin: 0vw;
 }
 
 .bg-color-layer {
@@ -12,8 +12,8 @@ body {
     background-color: #A0A0A0; /* #624664; /* #554156*/
     opacity: 0.88;
     z-index: -10; 
-    margin: 0px;
-    padding: 0px;
+    margin: 0vw;
+    padding: 0vw;
 }
 
 
@@ -23,7 +23,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    padding-left: 10rem;
+    padding-left: 8.36vw;
     background-image: url("../images/bgFinal.jpg");\
     opacity: 1;
 /*    background-repeat: no-repeat;*/
@@ -39,59 +39,62 @@ body {
 /*        z-index: 1;*/
         background-image: url("../images/anmitrahome.png");
         opacity: 1;
-    /*    background-repeat: no-repeat;*/
-        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        height: 80vh;
+/*        height: 100%;*/
         display: flex;
     }
 
     .hero {
         display: flex;
+        height: 80vh;
         /*background-color: #554156;*/
         justify-content: space-between;
         align-items: center;
-        padding: 20px 20px; 
-        margin: 60px 100px;
+        padding: 1.04vw 1.04vw; 
+        margin: 3.14vw 5.23vw;
         color: black;
     }
 
     .hero-text {
         max-width: 50%;
         text-align: left;
-        padding-left: 50px;
-        padding-right: 25px;
+        padding-left: 2.61vw;
+        padding-right: 1.31vw;
         /*align-items: right;*/
         /*align-content: right;*/
     }
 
     .hero-text h1 {
-        font-size: 72px; /*56*/
+        font-size: 3.6vw; /*56*/
         font-family: "Lora";
         font-weight: normal;
-        margin-bottom: 20px;
-        padding-bottom: 25px;
+        margin-bottom: 1.04vw;
+        padding-bottom: 1.31vw;
     }
 
     .hero-text p {
         /*margin-bottom: 20px;*/
         font-family: "Krub";
-        font-size: 22px;
+        font-size: 1.15vw;
         /*text-align: right;*/
     }
 
     .hero-text .buttons {
         display: flex;
-        gap: 15px;
+        gap: 0.78vw;
         border-color: black;
-        border-width: 5px;
+        border-width: 0.26vw;
         justify-content: flex-start;
     }
 
     .hero-text .buttons a {
         text-decoration: none;
-        padding: 10px 20px;
-        border-radius: 30px;
+        padding: 0.52vw 1.04vw;
+        border-radius: 1.57vw;
         font-family: "Krub";
-        font-size: 26px;
+        font-size: 1.36vw;
         font-weight: normal;
     }
 
@@ -102,20 +105,20 @@ body {
 
     .hero-text .buttons .type2 {
         background-color: #f8f9fa;
-        border: 1px solid #ddd;
+        border: 0.052vw solid #ddd;
         color: #333;
     }
 
     .hero-image {
         /*max-width: 40%;*/ /*40*/
-        padding: 25px;
-        padding-left: 0px;
-        padding-right: 50px;
+        padding: 1.31vw;
+        padding-left: 0vw;
+        padding-right: 2.61vw;
     }
 
     .hero-image img {
         width: 35vw;
-        border-radius: 500px; /*30px*/
+        border-radius: 26.14vw; /*30px*/
         background-image: radial-gradient(circle 50vh at 50% 100%, #a0a0a0, #a0a0a0);
         /*background-image: radial-gradient(circle closest-side, #a0a0a0, #a0a0a0);*/
         /*border: 1px solid #333;*/
@@ -133,7 +136,7 @@ body {
             width: 40vw;
             border-radius: 50%;
             display: block;
-            border:1px solid #A0A0A0;
+            border:0.05vw solid #A0A0A0;
         }
         /*.circle:after {
             content: "";
@@ -159,7 +162,7 @@ body {
         .circleWitten img {
             width: 30vw;
             border-radius: 1%;
-            margin-left: 10px;
+            margin-left: 0.52vw;
             /*display: block;*/
             /*border:1px solid #A0A0A0;*/
         }
@@ -176,7 +179,7 @@ body {
     }
 
     .join-section {
-        padding: 4rem 2rem;
+        padding: 3.35vw 1.67vw;
         text-align: center;
         flex-grow: 1;
         display: flex;
@@ -185,63 +188,63 @@ body {
     }
 
     .join-buttons {
-        margin-top: 2rem;
+        margin-top: 1.67vw;
         display: flex;
         justify-content: center;
-        gap: 1rem;
+        gap: 0.83vw;
     }
 
     .share-btn {
         background: transparent;
-        border: 1px solid #000;
+        border: 0.05vw solid #000;
         color: #000;
-        padding: 0.5rem 1rem;
+        padding: 0.42vw 0.83vw;
         cursor: pointer;
-        border-radius: 4px;
+        border-radius: 0.21vw;
     }
 
 /* Footer */
     footer {
         background: transparent;
-        padding: 2rem 0rem 0rem 0rem;
+        padding: 1.67vw 0rem 0rem 0rem;
     }
 
     .footer-links {
-        display: grid;
+        display: grid
         grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
+        gap: 1.67vw;
     }
 
     .link-column h4 {
-        margin-bottom: 1rem;
+        margin-bottom: 0.84vw;
     }
 
     .link-column a {
         display: block;
         color: #666;
         text-decoration: none;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.42vw;
     }
 
     .footer-bottom {
         background: #2c2c2c;
 /*        margin-top: 3rem;*/
-        padding: 1rem 1rem 0rem 1rem;
-        border-top: 1px solid #ddd;
+        padding: 0.84vw 0.84vw 0rem 0.84vw;
+        border-top: 0.052vw solid #ddd;
         display: flex;
         justify-content: space-between;
         color: #aaa;
-        font-size: 0.9rem;
+        font-size: 0.75vw;
     }
 
     .footer-bottom-links {
         display: flex;
         justify-content: space-between;
-        gap: 2rem;
+        gap: 1.67vw;
     }
 
     .footer-bottom-links a {
-        padding: 0.6rem 2rem 0rem 0rem;
+        padding: 0.vw 1.67vw 0rem 0rem;
         color: #aaa;
         text-decoration: none;
     }
@@ -253,7 +256,7 @@ body {
 
 
 /* Responsiveness*/
-    @media (max-width: 768px) {
+    @media (max-width: 70.15vw) {
         .hero {
             flex-direction: column;
             text-align: center;
@@ -261,7 +264,7 @@ body {
 
         .hero-text {
             max-width: 100%;
-            margin-bottom: 20px;
+            margin-bottom: 1.045vw;
         }
 
         .hero-image {

@@ -30,7 +30,7 @@ body {
         width: 100%;
         justify-content: space-between;
         align-items: center;
-        padding: 0.167vw 1.67vw;
+        padding: 0.2rem 1rem;
         background: #1C091D; /*#95A3B9*/
         /*background-image: url("/static/images/blackboardbg3.jpg");*/
         position: fixed;
@@ -38,22 +38,22 @@ body {
         left: 0;
         right: 0;
         z-index: 10000;
-        box-shadow: 0 0.1vw 0.21vw rgba(0,0,0,0.1);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
     .nav-links {
         display: flex;
         flex-wrap: wrap;
-        gap: 1.67vw;
+        gap: 2rem;
     }
 
     .nav-item {
         text-decoration: none;
         color: white;
         font-family: "Krub"; /*Fredericka the Great*/
-        font-size: 1.15vw; /*22px*/
+        font-size: 22px; /*28px*/
         font-weight: normal;
-        padding: 0.83vw 1.67vw;
+        padding: 1rem 2rem;
     }
 
     .nav-item:hover {
@@ -65,7 +65,7 @@ body {
     .nav-right {
         display: flex;
         flex-wrap: wrap;
-        gap: 0.83vw;
+        gap: 1rem;
         align-items: center;
         font-weight: normal;
     }
@@ -74,12 +74,12 @@ body {
         background: #ccc;
         color: black;
         border: none;
-        padding: 0.83vw 1.67vw;
-        margin: 0rem 1.67vw;
+        padding: 1rem 2rem;
+        margin: 0rem 2rem;
         cursor: pointer;
-        border-radius: 1.57vw;
+        border-radius: 30px;
         font-family: "Krub";
-        font-size: 0.97vw;
+        font-size: 18px;
         /*margin: 0.5rem 0rem;
         /*margin-right: 20px;*/
     }
@@ -88,7 +88,7 @@ body {
         position: relative;
         display: inline-block;
         font-family: "Krub";
-        font-size: 1.15vw;
+        font-size: 22px;
         color: white;
     }
 
@@ -101,12 +101,12 @@ body {
         z-index: 1;
         right: 0;
         font-family: "Krub";
-        font-size: 0.84vw;
+        font-size: 16px;
     }
 
     .dropdown-content a {
         color: white;
-        padding: 0.63vw 1.67vw;
+        padding: 12px 2rem;
         text-decoration: none;
         display: block;
     }
@@ -121,7 +121,7 @@ body {
     }
 
     .dropbtn {
-        padding: 0.84vw 1.67vw;
+        padding: 1rem 2rem;
     }
 
     .dropdown:hover .dropbtn {
