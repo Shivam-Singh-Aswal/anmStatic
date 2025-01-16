@@ -12,6 +12,15 @@
     font-style: normal;
 }
 
+:root {
+    --min-font-size-px: 15px;
+    --vw-to-px: calc(22/1.15);
+    --min-font-size-vw: calc(1.15*15/22);
+    --secondary-color: #95A3B9;
+    --tertiary-color: #F4F4F4;
+}
+
+
 html {
   overflow: hidden;
   height: 100%;
@@ -20,7 +29,7 @@ html {
 body {
   overflow: auto;
   height: 100%;
-  overscroll-behavior: none;
+/*  overscroll-behavior: none;*/
 }
 
 /* Navbar */
@@ -28,9 +37,11 @@ body {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
+        min-height: 60px;
         justify-content: space-between;
         align-items: center;
-        padding: 0.167vw 1.67vw;
+/*        vertical-align: middle;*/
+        padding: 0px 1.67vw;
         background: #1C091D; /*#95A3B9*/
         /*background-image: url("/static/images/blackboardbg3.jpg");*/
         position: fixed;
@@ -48,12 +59,18 @@ body {
     }
 
     .nav-item {
+        display: flex;
+        min-height: 60px;
         text-decoration: none;
+        align-items: center;
         color: white;
-        font-family: "Krub"; /*Fredericka the Great*/
-        font-size: 1.15vw; /*22px*/
+        font-family: "Krub"; 
+        font-size: max(1vw, var(--min-font-size-px));
+/*        font-size: max(1.15vw, var(--min-font-size-px));*/
         font-weight: normal;
-        padding: 0.83vw 1.67vw;
+        margin: auto;
+        padding: 0px 1.67vw;
+/*        padding: 0.83vw 1.67vw;*/
     }
 
     .nav-item:hover {
@@ -66,20 +83,26 @@ body {
         display: flex;
         flex-wrap: wrap;
         gap: 0.83vw;
+        padding: 0 1.67vw;
         align-items: center;
         font-weight: normal;
     }
 
     .register-btn {
+        min-height: 40px;
         background: #ccc;
+/*        max-height: 55px;*/
         color: black;
         border: none;
-        padding: 0.83vw 1.67vw;
-        margin: 0rem 1.67vw;
+        padding: auto max(2.5vw, 10px);
+/*        padding: 0.83vw 1.67vw;*/
+        margin: 0.2vw 1.67vw;
         cursor: pointer;
-        border-radius: 1.57vw;
+        align-items: center;
+        border-radius: max(1.57vw, calc(calc(var(--vw-to-px)*1.57)*var(--min-font-size-px)/22));
+/*        border-radius: 1.57vw;*/
         font-family: "Krub";
-        font-size: 0.97vw;
+        font-size: max(1vw, calc(calc(var(--vw-to-px)*1)*var(--min-font-size-px)/22));
         /*margin: 0.5rem 0rem;
         /*margin-right: 20px;*/
     }
@@ -88,7 +111,8 @@ body {
         position: relative;
         display: inline-block;
         font-family: "Krub";
-        font-size: 1.15vw;
+        font-size: max(1vw, calc(calc(var(--vw-to-px)*1.15)*var(--min-font-size-px)/22));
+/*        font-size: 1.15vw;*/
         color: white;
     }
 
@@ -101,7 +125,7 @@ body {
         z-index: 1;
         right: 0;
         font-family: "Krub";
-        font-size: 0.84vw;
+        font-size: max(0.84vw, calc(calc(var(--vw-to-px)*0.84)*var(--min-font-size-px)/22));
     }
 
     .dropdown-content a {

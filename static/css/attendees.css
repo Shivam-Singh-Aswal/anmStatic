@@ -1,7 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
     background: linear-gradient(135deg, #000000 0%, #a6213e 100%);  /*(135deg, #1a1a2e 0%, #16213e 100%);*/
-    min-height: 100vh;
+/*    min-height: 100vh;*/
     color: #333;
 }
 
@@ -82,6 +82,13 @@ h1 {
     justify-content: center;
     flex-wrap: wrap;
 }
+
+/*.filter-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}*/
 
 .filter-btn {
     padding: 8px 16px;
@@ -226,6 +233,7 @@ tr:hover {
 @media (max-width: 768px) {
     .container {
         padding: 10px;
+        padding-top: 80px;
     }
 
     .search-filter-container {
@@ -234,10 +242,11 @@ tr:hover {
 
     .filter-buttons {
         flex-direction: column;
+        align-items: center;
     }
 
     .filter-btn {
-        width: 100%;
+        width: 50%;
     }
 
     th, td {
