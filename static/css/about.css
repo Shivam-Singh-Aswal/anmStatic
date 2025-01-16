@@ -37,17 +37,22 @@ body {
 /*    transform: rotate(-0deg);*/
 /*    transform-origin: center;*/
     opacity: 0.55; /*0.15*/
-    background-repeat: no-repeat;
-/*    background-size: cover;*/
+/*    background-repeat: no-repeat;*/
+    background-size: cover;
     background-position: top right;
-    filter: blur(2px);
+    filter: blur(3px);
     z-index: -1; /* Places it behind other content */
 }
 
 .container {
     width: 70%;
     margin: auto;
+    padding: 2rem;
+    margin-top: 20px;
     overflow: hidden;
+    background: #a0a0a0dd;
+/*    opacity: 0.9;*/
+/*    filter: blur(5px);*/
 }
 
 /* header */
@@ -86,10 +91,10 @@ body {
 
 
 .content {
-    padding: 2rem;
-    padding-top: 6rem;
+/*    padding: 2rem;*/
+/*    padding-top: 6rem;*/
 /*    background: #fff;*/
-    margin-top: 20px;
+/*    margin-top: 20px;*/
 /*    text-align: center;*/
 }
 .content h2 {
@@ -102,4 +107,13 @@ body {
     font-family: "Krub";
     font-size: 1.2rem;
     line-height: 1.6rem;
+}
+
+.ref-link {
+    font-family: monospace;
+    font-size: 14px;
+}
+
+li {
+    margin: 4px;
 }
