@@ -97,6 +97,44 @@ body {
         font-weight: normal;
     }
 
+    .Witten h1 {
+        font-size: 72px; /*56*/
+        font-family: "Lora";
+        font-weight: normal;
+        margin-bottom: 20px;
+        padding-bottom: 25px;
+    }
+
+    .Witten h2 {
+        font-size: 60px; /*56*/
+        font-family: "Lora";
+        font-weight: normal;
+        margin-bottom: 20px;
+        padding-bottom: 25px;
+    }
+
+    .Witten h3 {
+        font-size: 32px; /*56*/
+        font-family: "Lora";
+        font-weight: normal;
+        margin-bottom: 20px;
+        padding-bottom: 25px;
+    }
+
+
+    .Witten h4 {
+        font-size: 24px; /*56*/
+        font-family: "Lora";
+        font-weight: normal;
+    }
+
+    .Witten p {
+        /*margin-bottom: 20px;*/
+        font-family: "Krub";
+        font-size: 18px;
+        /*text-align: right;*/
+    }
+
     .hero-text p {
         /*margin-bottom: 20px;*/
         font-family: "Krub";
@@ -149,15 +187,15 @@ body {
     }
 
     /* Professor Witten */
-        .circleWitten {
+        .Witten {
             /*border-radius: 100%;*/
             display: inline-block;
             position: relative;
         }
-        .circleWitten img {
+        .Witten img {
             width: 35vw;
 /*            border-radius: 5%;*/
-            margin-left: 10px;
+/*            margin-left: 10px;*/
             /*display: block;*/
             /*border:1px solid #A0A0A0;*/
         }
