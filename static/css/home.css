@@ -1,5 +1,6 @@
 body {
     margin: 0vw;
+/*    display: flex;*/
 }
 
 .bg-color-layer {
@@ -42,8 +43,12 @@ body {
         background-repeat: no-repeat;
         background-size: 100% auto;
         height: 40vw; /*80vh*/
-/*        height: 100%;*/
         display: flex;
+/*        flex-wrap: wrap;*/
+    }
+
+    #fillerbox {
+        width: 50%;
     }
 
     .hero {
@@ -55,19 +60,33 @@ body {
         padding: 1.04vw 1.04vw; 
         margin: 3.14vw 5.23vw;
         color: black;
+/*        flex-direction: column;*/
+/*        flex-wrap: wrap;*/
     }
 
-    .hero-text {
+    .witten {
+        border-radius: 1.04vw; 
+        background-color: rgba(00, 60, 60, 1); /*29, 29, 29, 0.5  85, 65, 86, 1*/
+        /*background: transparent;*/
+        padding-top: 3.14vw;
+        padding-bottom: 3.14vw;
+        padding-right: 2.61vw;
+        display: flex;
+    }
+
+    .hero-text { 
+        width: 50%;
         max-width: 50%;
         text-align: left;
         padding-left: 2.61vw;
         padding-right: 1.31vw;
+
         /*align-items: right;*/
         /*align-content: right;*/
     }
 
     .hero-text h1 {
-        font-size: 3.6vw; /*56*/
+        font-size: max(3.6vw, 24px); /*56*/
         font-family: "Lora";
         font-weight: normal;
         margin-bottom: 1.04vw;
@@ -77,7 +96,7 @@ body {
     .hero-text p {
         /*margin-bottom: 20px;*/
         font-family: "Krub";
-        font-size: 1.15vw;
+        font-size: max(1.15vw, 16px);
         /*text-align: right;*/
     }
 
@@ -91,11 +110,33 @@ body {
 
     .hero-text .buttons a {
         text-decoration: none;
+        padding: 5% 10%;
+        border-radius: 30px;
+        /*padding: 0.52vw 1.04vw;
+        border-radius: 1.57vw;*/
+        font-family: "Krub";
+        font-size: max(1.36vw, 12px);
+        font-weight: normal;
+    }
+
+    #learn-more-lec-button {
+        order: 3;
+        width: 50%;
+        align-items: center;
         padding: 0.52vw 1.04vw;
         border-radius: 1.57vw;
-        font-family: "Krub";
-        font-size: 1.36vw;
-        font-weight: normal;
+    }
+
+    .hero-text a {
+        text-decoration: none;
+        color: darkblue;
+        font-weight: bold;
+    }
+
+    .hero-text .in-text-link a:hover {
+        border-radius: 5px;
+        background-color: #dddddd;
+        padding: 2px 5px;
     }
 
     .hero-text .buttons .type1 {
@@ -126,6 +167,24 @@ body {
         opacity: 0.75;
     }
 
+    #date-event {
+        font-size: max(1.8vw, 20px); 
+        font-family: Lora; 
+        display: inline-flex;
+    }
+
+    #about-anmseries {
+        font-size: max(1vw, 14px);
+    }
+
+    #about-lecture {
+        font-size: max(1vw, 14px);
+    }
+
+    #anmitra-lecture-title {
+        font-size: max(2.61vw, 28px);
+    }
+
     /* Professor Mitra */
         .circle {
             border-radius: 50%;
@@ -138,20 +197,6 @@ body {
             display: block;
             border:0.05vw solid #A0A0A0;
         }
-        /*.circle:after {
-            content: "";
-            display: block;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(ellipse at center,
-                rgba(171,171,171,0) 60%,
-                rgba(171,171,171,0.95) 70%,
-                rgba(170,170,170,1) 100% 
-            );
-            border-radius: 50%;
-            position: absolute;
-            top: 0; left: 0;
-        }*/
 
     /* Professor Witten */
         .circleWitten {
@@ -229,13 +274,20 @@ body {
 
     .footer-bottom {
         background: #2c2c2c;
-/*        margin-top: 3rem;*/
-        padding: 0.84vw 0.84vw 0rem 0.84vw;
+        margin-top: 3rem;
+        padding: 1vw 0.84vw;
         border-top: 0.052vw solid #ddd;
         display: flex;
         justify-content: space-between;
         color: #aaa;
-        font-size: 0.75vw;
+        font-size: max(1vw, 10px);
+        flex-wrap: wrap;
+    }
+
+    .footer-bottom p {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
     }
 
     .footer-bottom-links {
@@ -257,18 +309,117 @@ body {
 
 
 /* Responsiveness*/
-    @media (max-width: 70.15vw) {
+    @media (max-width: 768px) {
+        * {
+            text-align: center;
+            font-size: 10px;
+            font-family: Krub;
+        }
+
+        body {
+            margin-top: 60px;
+        }
+
         .hero {
+            width: auto;
+/*            margin: auto;*/
+            height: 760px;
+            padding: 10px;
+/*            height: auto;*/
             flex-direction: column;
             text-align: center;
+            flex-wrap: wrap;
         }
 
         .hero-text {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .biggerContainer {
+    /*        z-index: 1;*/
+            width: 80%;
+            background-image: none;
+/*            opacity: 1;*/
+/*            background-repeat: no-repeat;*/
+/*            background-size: 100% auto;*/
+    /*        height: 100%;*/
+/*            display: flex;*/
+            flex-direction: column;
+/*            flex-wrap: wrap;*/
+            align-items: center;
+        }
+
+        #fillerbox {
+/*            width: 50%;*/
+            background-image: url("../images/anmitra2.png");
+            background-size: cover;
+            border-radius: 50%;
+            width: 100%;
+            aspect-ratio: 1;
+        }
+
+        .hero-text .buttons {
+            align-items: self-start;
+            gap: 35px;
+            margin: auto;
+        }
+
+        #date-event {
+            width: 100%;
+        }
+
+        .hero-text {
+            width: 100%;
             max-width: 100%;
-            margin-bottom: 1.045vw;
+            margin: auto;
+            padding: 0;
+/*            display: flex;*/
+/*            flex-direction: column;*/
+/*            flex-wrap: wrap;*/
+            align-items: center;
+        }
+
+        #about-anmseries {
+            text-align: justify;
+        }
+
+        #about-lecture {
+            text-align: justify;
+            width: 85%;
+            margin: 20px auto;
+            order: 2;
         }
 
         .hero-image {
             max-width: 100%;
         }
+
+        .circleWitten {
+            order: 1;
+        }
+
+        #learn-more-lec-button {
+            order: 3;
+            width: 50%;
+            align-items: center;
+        }
+
+        .circleWitten img {
+/*            min-width: 400px;*/
+            width: 90%;
+            border-radius: 1%;
+            margin: 20px auto;
+/*            margin-left: 0.52vw;*/
+            /*display: block;*/
+            /*border:1px solid #A0A0A0;*/
+        }
+
+        .footer-bottom p {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
     }

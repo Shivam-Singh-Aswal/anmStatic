@@ -53,17 +53,20 @@
                 <img src="{% static 'images/anmitra.png' %}" alt="Prof. A. N. Mitra">
             </div> -->
 
-            <div style="width: 50%;">
+            <div id="fillerbox">
                 <!-- &nbsp; -->
             </div>
 
-            <div class="hero-text" style="width: 50%;">
+            <div class="hero-text">
                 <div style="height: 4vw; aspect-ratio: 1;"></div>
                 <h1>A. N. Mitra Memorial Meeting and Lecture</h1>
                 <div style="height: 1.5vw;"></div>
-                <p style="font-size: 1vw;">In the loving memory of Prof. A. N. Mitra, we are holding this memorial meeting and lecture. This online lecture is a tribute to the life and work of late professor A. N. Mitra. His contributions to the field of High Energy and Nuclear Physics are recognised widely around the world and he has inspired many to do the same!</p>
+
+                <p id="about-anmseries">In the loving memory of and as a tribute to the life and work of Prof. Asoke Nath Mitra, we are organizing this meeting and the second memorial lecture. Prof. Mitra's contributions to the field of High Energy and Nuclear Physics are recognised widely around the world and  have inspired many generations of physicists. The <a href="https://www.youtube.com/watch?v=4kn6BwdyA14">inaugural memorial lecture</a> was given by Prof. N. Panchapakesan on Apr 17, 2023, and was organized by the department of Physics, University of Delhi.</p>
+
+                <!-- <p style="font-size: 1vw;">In the loving memory of Prof. A. N. Mitra, we are holding this memorial meeting and lecture. This online lecture is a tribute to the life and work of late professor A. N. Mitra. His contributions to the field of High Energy and Nuclear Physics are recognised widely around the world and he has inspired many to do the same!</p> -->
                 <div style="height: 3.5vw;"></div>
-                <p style="font-size: 1.8vw; font-family: Lora; display: inline-flex;">April 14-15, 2025</p>
+                <p id="date-event">April 14-15, 2025</p>
                 <div style="width: 10vw;; display: inline-flex;"></div>
                 <div class="buttons" style="display: inline-flex; justify-content: space-between; align-content: right;">
                     <a href="/register" class="type1">Meeting</a>
@@ -78,30 +81,32 @@
     <!-- To ensure proper gap between the above and below containers -->
     <div> &nbsp;</div> 
 
-    <div class="hero" style="
-        border-radius: 1.04vw; 
-        background-color: rgba(40, 40, 40, 1); /*29, 29, 29, 0.5  85, 65, 86, 1*/
-        /*background: transparent;*/
-        padding-top: 3.14vw;
-        padding-bottom: 3.14vw;
-        padding-right: 2.61vw;
-        height: 30vw;
-        ">
+
+    <div class="hero witten">
         <div class="hero-text" style="color: white; vertical-align: top;">
-            <h1 style="font-size: 2.61vw;"> 2<sup>nd</sup> A. N. Mitra Memorial Lecture</h1>
-            
-            <p>In the loving memory of and as a tribute to the life and work of Prof. Asoke Nath Mitra, we are organizing this meeting and the second memorial lecture. Prof. Mitra's contributions to the field of High Energy and Nuclear Physics are recognised widely around the world and  have inspired many generations of physicists. The <a href="https://www.youtube.com/watch?v=4kn6BwdyA14">inaugural memorial lecture</a> was given by Prof. N. Panchapakesan on Apr 17, 2023, and was organized by the department of Physics, University of Delhi.</p>
+            <h1> 2<sup>nd</sup> A. N. Mitra Memorial Lecture</h1>
+
+            <p id="about-lecture">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
             <!-- <p>In the loving memory of Professor Asoke Nath Mitra, we are holding this memorial meeting and lecture. This online lecture is a tribute to the life and work of late professor A. N. Mitra. His contributions to the field of High Energy and Nuclear Physics are recognised widely around the world and he has inspired many to do the same!</p> -->
 
-            <div class="buttons">
-                <a href="/lecture" style="margin-top: 3vw;" class="type2">Learn More</a>
+            <div class="buttons" id="learn-more-lec-button">
+                <a href="./lecture" style="margin-top: 3vw;" class="type2">Learn More</a>
                 <!-- <a href="/lecture" class="type1">Lecture</a> -->
             </div>
+
+            <div class="circleWitten">
+                <a href="/lecture"><img src="../static/images/lecturePoster.jpeg" alt="Professor Edward Witten"></a>
+            </div>
         </div>
-        <div class="circleWitten">
+        <!-- <div class="circleWitten">
             <a href="/lecture"><img src="../static/images/lecturePoster.jpeg" alt="Professor Edward Witten"></a>
-        </div>
+        </div> -->
     </div>
 
 
@@ -113,7 +118,7 @@
                 <p>In the loving memory of Professor Asoke Nath Mitra.</p>
                 <!-- email llink -->
 
-                <p>For queries, contact <a href="mailto:aalok.misra@ph.iitr.ac.in" style="color: cyan;">aalok.misra@ph.iitr.ac.in</a>.</p>
+                <p>For queries, contact &nbsp;<a href="mailto:aalok.misra@ph.iitr.ac.in" style="color: cyan;"> aalok.misra@ph.iitr.ac.in</a>.</p>
                 <!-- <div class="footer-bottom-links">
                     <a href="templates/about.html">About</a>
                     <a href="templates/schedule.html">Events</a>
