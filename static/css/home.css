@@ -1,5 +1,6 @@
 body {
-    margin: 0vw;
+    margin: auto;
+/*    margin-top: 60px;*/
 /*    display: flex;*/
 }
 
@@ -38,22 +39,24 @@ body {
 /* Hero text */
     .biggerContainer {
 /*        z-index: 1;*/
-        background-image: url("../images/anmitrahome.png");
+        background-image: url("../images/anmitrahome1.png");
         opacity: 1;
         background-repeat: no-repeat;
-        background-size: 100% auto;
-        height: 40vw; /*80vh*/
+        background-size: auto 100%;
+        margin: auto;
+        /*height: 40vw;*/ /*80vh*/
         display: flex;
 /*        flex-wrap: wrap;*/
     }
 
     #fillerbox {
-        width: 50%;
+        width: 40%;
+        height: auto;
     }
 
     .hero {
         display: flex;
-        height: 40vw; /*80vh*/
+        /*height: 30vw;*/ /*80vh*/
         /*background-color: #554156;*/
         justify-content: space-between;
         align-items: center;
@@ -62,6 +65,11 @@ body {
         color: black;
 /*        flex-direction: column;*/
 /*        flex-wrap: wrap;*/
+    }
+
+    .anmitra {
+        margin-right: 0px;
+        padding-right: 0px;
     }
 
     .witten {
@@ -127,7 +135,7 @@ body {
         border-radius: 1.57vw;
     }
 
-    .hero-text a {
+    /*.hero-text a {
         text-decoration: none;
         color: darkblue;
         font-weight: bold;
@@ -137,7 +145,7 @@ body {
         border-radius: 5px;
         background-color: #dddddd;
         padding: 2px 5px;
-    }
+    }*/
 
     .hero-text .buttons .type1 {
         background-color: #000;
@@ -170,6 +178,7 @@ body {
     #date-event {
         font-size: max(1.8vw, 20px); 
         font-family: Lora; 
+        color: white;
         display: inline-flex;
     }
 
@@ -178,7 +187,24 @@ body {
     }
 
     #about-lecture {
+        color: #d0d0d0;
         font-size: max(1vw, 14px);
+    }
+
+    #about-lecture a {
+        text-decoration: none;
+        color: #ff3864;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+
+    #about-lecture a:hover {
+        border-radius: 5px;
+/*        background-color: #ff3864;*/
+        color: yellow;
+/*        font-size: max(0.9vw, 12px);;*/
+        padding: 2px;
+/*        margin-bottom: 5px;*/
     }
 
     #anmitra-lecture-title {
@@ -213,7 +239,9 @@ body {
             /*border:1px solid #A0A0A0;*/
         }
     
-
+    #inside {
+        display: none;
+    }
 
 
 /* Join Section and Footer - Page 3 */
@@ -420,6 +448,14 @@ body {
             display: flex;
             flex-direction: column;
             width: 100%;
+        }
+
+        #outside {
+            display: none;
+        }
+
+        #inside {
+            display: flex;
         }
 
     }

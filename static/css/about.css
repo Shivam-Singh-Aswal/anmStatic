@@ -47,8 +47,9 @@ body {
 .container {
     width: 70%;
     margin: auto;
-    padding: 2rem;
-    margin-top: 20px;
+    padding: max(1.67vw, 10px);
+    margin-top: 60px;
+    margin-bottom: 20px;
     overflow: hidden;
     background: #a0a0a0dd;
 /*    opacity: 0.9;*/
@@ -84,45 +85,12 @@ blockquote:after {
 }
 
 blockquote {
-  margin-left: 0;
-  padding-left: 1em;
-  border-left: 5px solid purple;
+    width: 90%;
+    margin-left: 0;
+    margin: 10px auto;
+    padding-left: 1em;
+    border-left: 5px solid purple;
 }
-
-/* header */
-    header {
-        background: #333;
-        color: #fff;
-        padding-top: 30px;
-        min-height: 70px;
-        border-bottom: #77aaff 3px solid;
-    }
-    header a {
-        color: #fff;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 16px;
-    }
-    header ul {
-        padding: 0;
-        list-style: none;
-    }
-    header li {
-        float: left;
-        display: inline;
-        padding: 0 20px 0 20px;
-    }
-    header #branding {
-        float: left;
-    }
-    header #branding h1 {
-        margin: 0;
-    }
-    header nav {
-        float: right;
-        margin-top: 10px;
-    }
-
 
 .content {
 /*    padding: 2rem;*/
@@ -131,24 +99,66 @@ blockquote {
 /*    margin-top: 20px;*/
 /*    text-align: center;*/
 }
+
 .content h2 {
     font-family: "Lora";
     text-decoration: underline;
-    font-size: 3em;
+    font-size: max(2.5vw, 30px);
+/*    font-size: 3rem;*/
     color: #333;
 /*    text-align: center;*/
 }
+
 .content p {
     font-family: "Krub";
-    font-size: 1.2rem;
+    font-size: max(0.9vw, 14px);
+/*    font-size: 1.2rem;*/
     line-height: 1.6rem;
 }
 
 .ref-link {
     font-family: monospace;
-    font-size: 14px;
+    font-size: max(0.8vw, 10px);
+    text-wrap: wrap;
+}
+
+#birth-death-dates {
+    width: 100%;
+/*    font-size: 1rem; */
+    font-size: max(0.83vw, 14px); 
+    font-family: monospace;
+}
+
+ol {
+    width: 90%;
+    font-family: Krub;
+    padding-left: 14px;
 }
 
 li {
     margin: 4px;
 }
+ 
+li a {
+    text-wrap: wrap;
+    word-break: break-all;
+}
+
+#source-citation {
+    font-family: Krub;
+    font-weight: bold;
+    text-align: left;
+    width: 95%;
+}
+
+
+/* Responsiveness */
+    @media (max-width: 768px) {
+        /*.content h2 {
+            font-size: 30px;
+        }*/
+
+        .container {
+            width: 90%;
+        }
+    }
